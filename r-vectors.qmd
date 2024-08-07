@@ -1,0 +1,58 @@
+---
+title: "eds212-day3b"
+author: "Takeen Shamloo"
+format: html
+editor_options: 
+  chunk_output_type: console
+---
+
+## Create some vectors in R ----
+
+These are all char elements
+```{r}
+# Show that r will only accept vectors of the same data type ----
+marmots <- c("blue", "green", 4, "yellow") # 4 will be converted to string
+
+# print vector ----
+marmots
+
+# check class ----
+class(marmots)
+```
+
+These are all numeric elements
+```{r}
+pika <- c(12.4, 6.8, 2.9, 8.8, 5)
+pika
+class(pika)
+```
+
+These are all integer elements
+```{r}
+bear <- c(20L, 3L, 5L, 18L, 23L)
+bear
+class(bear)
+```
+
+## Vector math
+
+```{r}
+# Creating vectors ----
+ringtail <- c(4.3, 8.9, 2.6, 7.1)
+fox <- c(9.0, 12.5, 5.4, 10.9)
+
+# add ----
+ringtail + fox
+
+# subtract ----
+fox - ringtail
+
+# scaler multiplier ----
+100 * ringtail
+
+# dot product ----
+ringtail %*% fox
+```
+
+
+
